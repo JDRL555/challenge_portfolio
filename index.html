@@ -3,48 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Joshua Rodríguez</title>
   </head>
   <body>
     <nav class="navbar-container">
       <section class="navbar-item">
-        <img src="" alt="" />
-        <h2>Joshua Rodríguez</h2>
+        <img src="imgs/logo.png" alt="logo" />
+        <h3>Joshua Rodríguez</h3>
       </section>
-      <section class="navbar-item">
-        <ul>
-          <li><a href="">Sobre mi</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Hobbies</a></li>
-          <li><a href="">Formación</a></li>
-          <li><a href="">Proyectos</a></li>
-          <li>
-            <b><a href="">joshu150604@hotmail.com</a></b>
-          </li>
-        </ul>
-      </section>
+      <ul class="navbar-item">
+        <li><a href="#sobre-mi">Sobre mi</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#experiencia">Proyectos</a></li>
+        <li>
+          <b><a href="#contacto">joshu150604@hotmail.com</a></b>
+        </li>
+      </ul>
     </nav>
     <main>
       <header class="cabecera-container">
         <section class="cabecera-item">
-          <h1>¡Hello World!, mi nombre es Joshua Rodríguez</h1>
+          <h1>¡Hello World!, soy Joshua Rodríguez</h1>
           <p>
             Soy desarrollador web Full-Stack, destacando con tecnologías como
             Javascript y Python, manejando sus respectivos frameworks y
             librerías
           </p>
           <ul class="links">
-            <li><a href="">Github </a></li>
-            <li><a href="">Linkedin </a></li>
-            <li><a href="">Instagram </a></li>
-            <li><a href="">Curriculo </a></li>
+            <li><a href="">Github <b>↗</b></a></li>
+            <li><a href="">Linkedin <b>↗</b></a></li>
+            <li><a href="">Instagram <b>↗</b></a></li>
+            <li><a href="">Curriculo <b>↗</b></a></li>
           </ul>
         </section>
         <section class="cabecera-item">
-          <img src="" alt="yo" />
+          <img src="imgs/yo.jpeg" alt="yo" />
         </section>
       </header>
-      <section class="sobre-mi">
+      <section id="sobre-mi" class="sobre-mi">
         <h2>Sobre mí</h2>
         <p>
           Soy un joven estudiante del desarrollo web y de la informática en
@@ -59,7 +62,7 @@
           aquellos que lo necesiten.
         </p>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <h2>Skills</h2>
         <div class="skills-container">
           <div class="skills-item">
@@ -124,7 +127,7 @@
           </div>
         </div>
       </section>
-      <section class="hobbies">
+      <section id="hobbies" class="hobbies">
         <h2>Hobbies</h2>
         <div class="skills-container">
           <div class="skills-item">
@@ -149,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="formacion">
+      <section id="formacion" class="formacion">
         <h2>Formación académica</h2>
         <div class="formacion-container">
           <div class="formacion-item">
@@ -164,11 +167,11 @@
           </div>
         </div>
       </section>
-      <section class="experiencia">
+      <section id="experiencia" class="experiencia">
         <h2>Experiencia profesional</h2>
         <div class="proyectos-container">
           <div class="proyectos-item">
-            <img src="" alt="" />
+            <img class="captura" src="imgs/encriptador.png" alt="encriptador" />
             <div class="proyectos-detalles">
               <h3>Encriptador de texto</h3>
               <p>Challenge Alura Codificador</p>
@@ -177,16 +180,16 @@
               <img src="" alt="css" />
               <img src="" alt="js" />
               <div class="botones-container">
-                <button>Repositorio</button>
-                <button>Ver proyecto</button>
+                <button class="repositorio-button">Repositorio</button>
+                <button class="proyecto-button">Ver proyecto</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="contacto">
+      <section id="contacto" class="contacto">
         <div class="contacto-item">
-          <img src="" alt="" />
+          <img src="" alt="contacto-img" />
         </div>
         <div class="contacto-item">
           <h2>Contacto</h2>
@@ -200,14 +203,14 @@
             <input placeholder="E-mail" type="text" />
             <input placeholder="Asunto" type="text" />
             <textarea placeholder="Mensaje" name="" id=""></textarea>
-            <button>Enviar</button>
+            <button class="enviar">Enviar mensaje</button>
           </form>
         </div>
       </section>
     </main>
     <footer>
-      <b>Derechos reservados a Joshua Rodríguez</b>
-      <b>2024</b>
+      <p>Derechos reservados a Joshua Rodríguez</p>
+      <p>2024</p>
     </footer>
   </body>
 </html>
