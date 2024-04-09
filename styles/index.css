@@ -1,0 +1,410 @@
+.navbar-container,
+.navbar-item 
+{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  background-color: var(--background-color);
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar-item {
+  list-style-type: none;
+}
+
+.navbar-item img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  padding: 0 10px;
+  transition: .3s;
+}
+
+.navbar-item a:hover {
+  font-weight: 600;
+  color: var(--bold-font-color);
+}
+
+.cabecera-container {
+  display: flex;
+  align-items: center;
+}
+
+.cabecera-item:first-child {
+  width: 70%;
+  padding-right: 10px;
+}
+
+.cabecera-item:last-child {
+  padding-left: 0;
+  width: 30%;
+}
+
+.cabecera-item h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.cabecera-item p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cabecera-item img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0;
+}
+
+.links a {
+  text-decoration: none;
+  margin-right: 20px;
+  transition: .3s;
+}
+
+.links a:hover {
+  font-weight: 600;
+  color: var(--bold-font-color);
+}
+
+.sobre-mi,
+.formacion,
+.contacto {
+  background-color: var(--secondary-color);
+}
+
+section h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.skills,
+.hobbies,
+.formacion,
+.experiencia {
+  text-align: center;
+}
+
+.skills-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  margin: 10px;
+  transition: .5s;
+}
+
+.skill {
+  width: 30px;
+  fill: var(--primary-color);
+}
+
+.skills-item span,
+.skill, #fastapi path 
+{
+  transition: .5s;
+}
+
+.skills-item:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.skills-item:hover span {
+  color: white;
+}
+
+.skills-item:hover .skill {
+  fill: white;
+}
+
+.skills-item:hover #fastapi path {
+  fill: var(--primary-color);
+}
+
+.formacion-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formacion-item {
+  width: 300px;
+}
+
+.formacion-item img {
+  width: 200px;
+}
+
+.proyectos-container {
+  margin: auto;
+}
+
+.proyectos-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.proyectos-item .captura {
+  width: 70%;
+}
+
+.proyectos-item h3 {
+  font-size: 22px;
+}
+
+.tecnologias {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+}
+
+.repositorio-button,
+.proyecto-button {
+  padding: 15px;
+  margin: 10px 10px 0 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.repositorio-button {
+  background: var(--background-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.proyecto-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+.botones-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.botones-container a {
+  text-decoration: none;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacto-item:first-child {
+  width: 35%;
+}
+
+.contacto-item:last-child {
+  width: 60%;
+}
+
+.contacto-img {
+  width: 100%;
+  height: 600px;
+  background: url("../imgs/contacto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacto-item form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contacto-item input,
+.contacto-item textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  transition: .5s;
+}
+
+.contacto-item textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contacto-item input:focus,
+.contacto-item textarea:focus {
+  box-shadow: 0 3px 0 var(--primary-color);
+}
+
+.contacto-item input:focus::placeholder,
+.contacto-item textarea:focus::placeholder {
+  color: var(--primary-color);
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  transition: .5s;
+}
+
+.enviar {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Estilos para Tablet */
+@media screen and (width <= 894px) {
+  main section {
+    padding: 50px 50px;
+  }
+  .navbar-item li:nth-child(1), 
+  .navbar-item li:nth-child(2), 
+  .navbar-item li:nth-child(3), 
+  .navbar-item li:nth-child(4), 
+  .navbar-item li:nth-child(5) 
+  {
+    display: none;
+  }
+
+  .links {
+    justify-content: space-between;
+  }
+
+  .cabecera-item:first-child {
+    width: 80%;
+  }
+  
+  .cabecera-item:last-child {
+    width: 20%;
+  }
+
+  .skills-item {
+    width: 150px;
+  }
+
+  .skills, 
+  .hobbies, 
+  .formacion {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .formacion-container {
+    justify-content: space-around;
+  }
+
+  .formacion-item {
+    width: 400px;
+  }
+
+  .formacion-item img {
+    width: 70%;
+  }
+
+  #experiencia {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .proyectos-container {
+    width: 100%;
+  }
+
+  .proyectos-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .proyectos-detalles {
+    width: 70%;
+  }
+
+  .captura {
+    width: 100%;
+  }
+
+  .contacto-item:first-child {
+    display: none;
+  }
+
+  .contacto-item:last-child {
+    width: 100%;
+  }
+}
+
+/* Estilos para Mobile */
+@media screen and (width <= 425px) {
+  .cabecera-container {
+    padding-top: 100px;
+    flex-direction: column-reverse;
+  }
+
+  .cabecera-item {
+    padding: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .cabecera-item:first-child, 
+  .cabecera-item:last-child 
+  {
+    width: 80%;
+  }
+
+  .contacto {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contacto-item:last-child {
+    width: 90%;
+  }
+}

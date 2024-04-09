@@ -1,0 +1,22 @@
+* {
+  --primary-color: #2A7AE4;
+  --secondary-color: #EAF2FD;
+  --font-color: #464646;
+  --bold-font-color: #252525;
+
+  --background-color: #F5F5F5;
+
+  font-family: "Raleway", sans-serif;
+  color: var(--font-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+main section {
+  padding: 50px 120px;
+  padding-top: 80px;
+}
