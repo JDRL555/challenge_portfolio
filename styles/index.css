@@ -60,13 +60,14 @@
 }
 
 .cabecera-item img {
-  width: 90%;
+  width: 200px;
   border-radius: 100%;
 }
 
 .links {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
   width: 100%;
   padding-left: 0;
 }
@@ -109,6 +110,10 @@ section h2 {
 }
 
 .skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background-color: white;
   width: 200px;
   height: 50px;
@@ -117,7 +122,14 @@ section h2 {
   transition: .5s;
 }
 
-.skills-item span {
+.skill {
+  width: 30px;
+  fill: var(--primary-color);
+}
+
+.skills-item span,
+.skill, #fastapi path 
+{
   transition: .5s;
 }
 
@@ -130,6 +142,14 @@ section h2 {
   color: white;
 }
 
+.skills-item:hover .skill {
+  fill: white;
+}
+
+.skills-item:hover #fastapi path {
+  fill: var(--primary-color);
+}
+
 .formacion-container {
   width: 100%;
   margin: auto;
@@ -140,6 +160,10 @@ section h2 {
 
 .formacion-item {
   width: 300px;
+}
+
+.formacion-item img {
+  width: 200px;
 }
 
 .proyectos-container {
@@ -159,6 +183,12 @@ section h2 {
 
 .proyectos-item h3 {
   font-size: 22px;
+}
+
+.tecnologias {
+  width: 100%;
+  gap: 10px;
+  display: flex;
 }
 
 .repositorio-button,
@@ -181,17 +211,37 @@ section h2 {
   color: white;
 }
 
+.botones-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.botones-container a {
+  text-decoration: none;
+}
+
 .contacto {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .contacto-item:first-child {
-  width: 40%;
+  width: 35%;
 }
 
 .contacto-item:last-child {
   width: 60%;
+}
+
+.contacto-img {
+  width: 100%;
+  height: 600px;
+  background: url("../imgs/contacto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .contacto-item form {
@@ -202,6 +252,7 @@ section h2 {
 
 .contacto-item input,
 .contacto-item textarea {
+  width: 100%;
   padding: 15px;
   font-size: 17px;
   border: none;
@@ -211,6 +262,7 @@ section h2 {
 
 .contacto-item textarea {
   height: 100px;
+  resize: none;
 }
 
 .contacto-item input:focus,
@@ -248,3 +300,111 @@ footer p {
   margin: 5px 0;
 }
 
+/* Estilos para Tablet */
+@media screen and (width <= 894px) {
+  main section {
+    padding: 50px 50px;
+  }
+  .navbar-item li:nth-child(1), 
+  .navbar-item li:nth-child(2), 
+  .navbar-item li:nth-child(3), 
+  .navbar-item li:nth-child(4), 
+  .navbar-item li:nth-child(5) 
+  {
+    display: none;
+  }
+
+  .links {
+    justify-content: space-between;
+  }
+
+  .cabecera-item:first-child {
+    width: 80%;
+  }
+  
+  .cabecera-item:last-child {
+    width: 20%;
+  }
+
+  .skills-item {
+    width: 150px;
+  }
+
+  .skills, 
+  .hobbies, 
+  .formacion {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .formacion-container {
+    justify-content: space-around;
+  }
+
+  .formacion-item {
+    width: 400px;
+  }
+
+  .formacion-item img {
+    width: 70%;
+  }
+
+  #experiencia {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .proyectos-container {
+    width: 100%;
+  }
+
+  .proyectos-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .proyectos-detalles {
+    width: 70%;
+  }
+
+  .captura {
+    width: 100%;
+  }
+
+  .contacto-item:first-child {
+    display: none;
+  }
+
+  .contacto-item:last-child {
+    width: 100%;
+  }
+}
+
+/* Estilos para Mobile */
+@media screen and (width <= 425px) {
+  .cabecera-container {
+    padding-top: 100px;
+    flex-direction: column-reverse;
+  }
+
+  .cabecera-item {
+    padding: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .cabecera-item:first-child, 
+  .cabecera-item:last-child 
+  {
+    width: 80%;
+  }
+
+  .contacto {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contacto-item:last-child {
+    width: 90%;
+  }
+}
